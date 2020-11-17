@@ -113,6 +113,7 @@ class Type extends Component {
         this.setState({chosen: 'true'})     
     }
     //for deploy
+    /*
     async deploy(Abi) {
         let name
         let v = []
@@ -138,7 +139,7 @@ class Type extends Component {
     
         this.setState({params:v})
         this.setState({schema:JSON.parse(sch)})
-    }
+    }*/
 
     render() {
     let content 
@@ -162,7 +163,7 @@ class Type extends Component {
    
     return (
         <div> 
-            {content}
+            <h1>fdlbj</h1>
         </div>
         );
     }
