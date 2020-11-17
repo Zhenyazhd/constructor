@@ -3,7 +3,7 @@ import {useHttp} from '../hooks/http.hook'
 import {AuthContext} from '../context/AuthContext'
 import {useHistory} from 'react-router-dom'
 import Form from "@rjsf/material-ui"
-import Web3 from 'web3'
+//import Web3 from 'web3'
 
 
 export const Deploy = (props) => {
@@ -70,7 +70,7 @@ export const Deploy = (props) => {
     dep = JSON.parse(dep)
 
     if (deployed === false) {
-      content = <Form schema={props.schema} onSubmit={onSubmit_deploy}/>
+    //  content = <Form schema={props.schema} onSubmit={onSubmit_deploy}/>
     }
     
     return (
