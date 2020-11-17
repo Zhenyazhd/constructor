@@ -7,7 +7,7 @@ import Form from "@rjsf/material-ui"
 
 
 export const Deploy = (props) => {
-  const history = useHistory()  
+/*  const history = useHistory()  
     const auth = useContext(AuthContext)
     const {request} = useHttp()
 
@@ -72,7 +72,7 @@ export const Deploy = (props) => {
     if (deployed === false) {
     //  content = <Form schema={props.schema} onSubmit={onSubmit_deploy}/>
     }
-    
+    */
     return (
       <div> 
         <h1>vcb n</h1>
