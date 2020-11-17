@@ -68,9 +68,9 @@ export const Deploy = (props) => {
       }
     }`
     dep = JSON.parse(dep)
-//onSubmit={onSubmit_deploy}
+
     if (deployed === false) {
-      content = <Form schema={props.schema} />
+      content = <Form schema={props.schema} onSubmit={onSubmit_deploy}/>
     }
     
     return (

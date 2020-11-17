@@ -10,7 +10,7 @@ import {Navbar} from '../components/Navbar'
 import Web3 from 'web3'
 import Form from "@rjsf/material-ui"
 import Stage from '../code_json/Stage.json'
-import Timetable from '../code_json/Timetable.json'
+/*import Timetable from '../code_json/Timetable.json'
 import Escrow from '../code_json/Escrow.json'
 import Timeescrow from '../code_json/Timeescrow.json'
 import Min from '../code_json/Min.json'
@@ -22,12 +22,12 @@ import Capped_max from '../code_json/Capped_max.json'
 import Capped_min from '../code_json/Capped_min.json'
 import Capped_min_max from '../code_json/Capped_min_max.json'
 import Changerate from '../code_json/Changerate.json'
-import d_stage from '../code_json/desciption/d_stage.json'
+import d_stage from '../code_json/desciption/d_stage.json'*/
 import detectEthereumProvider from '@metamask/detect-provider'
 //import 'bootstrap/dist/css/bootstrap.min.css'
 
 export const Contract = () => {
-    const {token} = useContext(AuthContext)
+    /*const {token} = useContext(AuthContext)
     const {request, loading} = useHttp()
 
     const [sm_token, setToken] = useState(null)
@@ -246,11 +246,14 @@ export const Contract = () => {
         content = form
     }
 
+ <Navbar account={account}
+                   ethBalance = {ethBalance}/>
+
+{content}    
+*/
     return (
         <div> 
-            <Navbar account={account}
-                   ethBalance = {ethBalance}/>
-            {content}            
+           <h1>fvfdf</h1>  
         </div>
     )
 }
