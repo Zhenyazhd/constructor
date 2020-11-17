@@ -54,7 +54,7 @@ export const TokensPage = () => {
       const fetched = await request(`/api/token/${token_id}`, 'GET', null, {
         Authorization: `Bearer ${token}`
       })
-      history.push(`/contract/${token_id}`)
+    //  history.push(`/contract/${token_id}`)
     } catch (e) {}
   })
 
