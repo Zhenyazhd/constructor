@@ -62,7 +62,7 @@ export const AccountPage = () => {
                     <TokensPage/>
                 </div>
     } else {
-        content = <h1>fhdgjn</h1>//<Type account={account} ethBalance = {ethBalance}/>
+        content = <Type account={account} ethBalance = {ethBalance}/>
     } 
 
     return (

@@ -3,15 +3,7 @@ import {Switch, Route, Redirect} from 'react-router-dom'
 import {AccountPage} from './pages/AccountPage'
 import {AuthPage} from './pages/AuthPage'
 import {Contract} from './pages/Contract'
-/*import {Page} from './pages/Page'
-  
-      <Redirect to="/account" />
 
-<Route path="/contract/:id">
-          <Contract />
-        </Route>
-
-*/
 
 export const useRoutes = isAuthenticated => {
 
