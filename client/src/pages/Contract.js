@@ -27,7 +27,7 @@ import detectEthereumProvider from '@metamask/detect-provider'
 //import 'bootstrap/dist/css/bootstrap.min.css'
 
 export const Contract = () => {
-    /*const {token} = useContext(AuthContext)
+    const {token} = useContext(AuthContext)
     const {request, loading} = useHttp()
 
     const [sm_token, setToken] = useState(null)
@@ -91,7 +91,7 @@ export const Contract = () => {
         if (type == 'Stage') {
             Abi = Stage['abi']
         }
-        else if(type === 'Timetable') {
+       /* else if(type === 'Timetable') {
             Abi = Timetable['abi']
         }
         else if(type === 'Escrow' ) {
@@ -120,7 +120,7 @@ export const Contract = () => {
         }
         else if(type === 'Pause') {
             Abi = Pause['abi'] 
-        }
+        }*/
         try {
         let name
         let uiSchema
@@ -166,7 +166,7 @@ export const Contract = () => {
         if (type == 'Stage') {
             Abi = Stage['abi']
         }
-        else if(type == 'Timetable') {
+       /* else if(type == 'Timetable') {
             Abi = Timetable['abi']
         }
         else if(type == 'Escrow' ) {
@@ -195,7 +195,7 @@ export const Contract = () => {
         }
         else if(type == 'Pause') {
             Abi = Pause['abi'] 
-        }
+        }*/
         let isReached
         let value = '0'
         let params = []
@@ -218,7 +218,7 @@ export const Contract = () => {
                 change_state = 'true'
             } 
         })
-        const web3 = new Web3(Web3.givenProvider,  null, { transactionConfirmationBlocks: 1});
+     /*   const web3 = new Web3(Web3.givenProvider,  null, { transactionConfirmationBlocks: 1});
         let contract = new web3.eth.Contract(Abi, sm_token['address'])
         if ( change_state === 'false'){
             await contract.methods[method](...params).call({from: account}).then(function(result){
@@ -231,7 +231,7 @@ export const Contract = () => {
                 isReached = error.toString(); 
             })
         }
-        let toastHTML = `<h5 class="black-text text-darken-2">${method}:${isReached}</h5>`
+        let toastHTML = `<h5 class="black-text text-darken-2">${method}:${isReached}</h5>`*/
         window.M.toast({html: toastHTML }) 
     }
     
@@ -246,14 +246,15 @@ export const Contract = () => {
         content = form
     }
 
- <Navbar account={account}
-                   ethBalance = {ethBalance}/>
+
 
 {content}    
-*/
+
     return (
         <div> 
-           <h1>fvfdf</h1>  
+            <Navbar account={account}
+                   ethBalance = {ethBalance}/>
+            {content}
         </div>
     )
 }
