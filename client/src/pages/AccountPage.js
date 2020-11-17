@@ -1,11 +1,11 @@
 import React, {useContext, useEffect, useState, useCallback } from 'react'
 import { Button } from 'semantic-ui-react' 
 import {Navbar} from '../components/Navbar'
-import {TokensPage} from './TokensPage'
+//import {TokensPage} from './TokensPage'
 
 
 import detectEthereumProvider from '@metamask/detect-provider'
-import Type from './Type'
+//import Type from './Type'
 
 export const AccountPage = () => {
     const [account, setAccount] = useState(null)
@@ -51,7 +51,7 @@ export const AccountPage = () => {
     useEffect(() => {
         getBlockchain()
       }, [getBlockchain])
-    //getBlockchain()
+    //getBlockchain()   <TokensPage/> <Type account={account} ethBalance = {ethBalance}/>
     
     let content 
     if( !cr_token ){
@@ -59,11 +59,9 @@ export const AccountPage = () => {
                     <Button className="waves-effect waves-light btn" onClick={handleCreate}>
                         Create New Token
                     </Button>
-                    <TokensPage/>
                 </div>
     } else {
-        content = <Type account={account}
-        ethBalance = {ethBalance}/>
+        content = <h1>HI HONEY</h1>
     } 
 
     return (

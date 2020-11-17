@@ -1,9 +1,14 @@
 import React from 'react'
 import {Switch, Route, Redirect} from 'react-router-dom'
-//import {AccountPage} from './pages/AccountPage'
+import {AccountPage} from './pages/AccountPage'
 import {AuthPage} from './pages/AuthPage'
 //import {Contract} from './pages/Contract'
-import {Page} from './pages/Page'
+/*import {Page} from './pages/Page'
+  <Route path="/contract/:id">
+          <Page />
+        </Route>
+      <Redirect to="/account" />
+*/
 
 export const useRoutes = isAuthenticated => {
 
@@ -11,12 +16,9 @@ export const useRoutes = isAuthenticated => {
     return (
       <Switch>
         <Route path="/account" exact> 
-          <Page />
+          <AccountPage />
         </Route>  
-        <Route path="/contract/:id">
-          <Page />
-        </Route>
-      <Redirect to="/account" />
+        <Redirect to="/account" exact/>
       </Switch>
     )
   } 
