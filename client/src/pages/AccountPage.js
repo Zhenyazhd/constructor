@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useState, useCallback } from 'react'
 import { Button } from 'semantic-ui-react' 
 import {Navbar} from '../components/Navbar'
 import {TokensPage} from './TokensPage'
-import Web3 from 'web3'
+//import Web3 from 'web3'
 
 import detectEthereumProvider from '@metamask/detect-provider'
 //import Type from './Type'
