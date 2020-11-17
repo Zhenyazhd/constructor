@@ -1,9 +1,9 @@
 import React, { useState, useContext, useEffect } from "react"
-import {useHttp} from '../hooks/http.hook'
-import {AuthContext} from '../context/AuthContext'
-import {useHistory} from 'react-router-dom'
-import Form from "@rjsf/material-ui"
-import Web3 from 'web3'
+//import {useHttp} from '../hooks/http.hook'
+//import {AuthContext} from '../context/AuthContext'
+//import {useHistory} from 'react-router-dom'
+//import Form from "@rjsf/material-ui"
+//import Web3 from 'web3'
 
 
 export const Deploy = (props) => {
