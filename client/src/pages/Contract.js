@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useContext, useCallback } from "react"
-/*import { Button } from 'semantic-ui-react' 
+import { Button } from 'semantic-ui-react' 
 import {useParams} from 'react-router-dom'
 import {useHttp} from '../hooks/http.hook'
 import {AuthContext} from '../context/AuthContext'
 import {Loader} from '../components/Loader'
 import {Navbar} from '../components/Navbar'
 //import Modal from 'react-bootstrap/Modal'
-
+/*
 import Web3 from 'web3'
 import Form from "@rjsf/material-ui"
 import Stage from '../code_json/Stage.json'
