@@ -158,7 +158,7 @@ class Type extends Component {
     if (this.state.chosen === 'true') {
         content = <h1>fdlbj</h1>
     } else {
-        content = <Form schema={sch} onSubmit={this.onSubmit_sch}/>
+      //  content = <Form schema={sch} onSubmit={this.onSubmit_sch}/>
     }
    
     return (
