@@ -2,8 +2,10 @@ import React from 'react'
 import {Switch, Route, Redirect} from 'react-router-dom'
 import {AccountPage} from './pages/AccountPage'
 import {AuthPage} from './pages/AuthPage'
-import {Contract} from './pages/Contract'
-
+/*import {Contract} from './pages/Contract'
+<Route path="/contract/:id">
+          <Contract />
+        </Route> */
 
 export const useRoutes = isAuthenticated => {
 
@@ -13,9 +15,7 @@ export const useRoutes = isAuthenticated => {
         <Route path="/account" exact> 
           <AccountPage />
         </Route> 
-        <Route path="/contract/:id">
-          <Contract />
-        </Route> 
+        
         <Redirect to="/account" exact/>
       </Switch>
     )
