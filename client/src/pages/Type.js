@@ -3,7 +3,7 @@ import { render } from "react-dom"
 //import {Deploy} from './Deploy.js'
 
 import Form from "@rjsf/material-ui"
-
+/*
 import sch from '../code_json/Schema.json'
 import Stage from '../code_json/Stage.json'
 import Timetable from '../code_json/Timetable.json'
@@ -17,7 +17,7 @@ import List from '../code_json/List.json'
 import Capped_max from '../code_json/Capped_max.json'
 import Capped_min from '../code_json/Capped_min.json'
 import Capped_min_max from '../code_json/Capped_min_max.json'
-import Changerate from '../code_json/Changerate.json'
+import Changerate from '../code_json/Changerate.json'*/
 
 class Type extends Component {
     
