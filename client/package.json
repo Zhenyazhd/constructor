@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@metamask/detect-provider": "^1.2.0",
     "@rjsf/bootstrap-4": "^2.4.0",
     "@rjsf/semantic-ui": "^2.4.0",
     "@testing-library/jest-dom": "^5.11.5",
