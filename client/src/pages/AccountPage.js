@@ -5,7 +5,7 @@ import {TokensPage} from './TokensPage'
 //import Web3 from 'web3'
 
 import detectEthereumProvider from '@metamask/detect-provider'
-//import Type from './Type'
+import Type from './Type'
 
 export const AccountPage = () => {
     const [account, setAccount] = useState(null)
