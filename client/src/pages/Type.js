@@ -31,7 +31,7 @@ class Type extends Component {
         params:''
       }
     }
-/*
+
     onSubmit_sch = ({formData}) => {
         let Abi
         if (formData['Stage']) {
@@ -39,7 +39,7 @@ class Type extends Component {
             this.setState({type: 'Stage'})
             Abi = Stage['abi']
         }
-        else if(formData['Timetable'] ) {
+       /* else if(formData['Timetable'] ) {
             this.setState({data: Timetable})
             this.setState({type: 'Timetable'})
             Abi = Timetable['abi']
@@ -108,15 +108,15 @@ class Type extends Component {
             this.setState({data: Pause})
             this.setState({type: 'Pause'})
             Abi = Pause['abi']
-        }
+        }*/
         this.deploy(Abi)
         this.setState({chosen: 'true'})     
-    }*/
+    }
 
 
 
     //for deploy
-    /*
+    
     async deploy(Abi) {
         let name
         let v = []
@@ -142,7 +142,7 @@ class Type extends Component {
     
         this.setState({params:v})
         this.setState({schema:JSON.parse(sch)})
-    }*/
+    }
 
     render() {
     let content 
@@ -155,18 +155,18 @@ class Type extends Component {
                             account = {this.props.account}
                             ethBalance = {this.props.ethBalance}  /> 
     
-    
+    */
     
 
     if (this.state.chosen === 'true') {
         content = <h1>fdlbj</h1>
     } else {
-      //  content = <Form schema={sch} onSubmit={this.onSubmit_sch}/>
-    }*/
+        content = <Form schema={sch} onSubmit={this.onSubmit_sch}/>
+    }
    
     return (
         <div> 
-            <h1>fdlbj</h1>
+            {content}
         </div>
         );
     }
