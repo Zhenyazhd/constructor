@@ -19,7 +19,7 @@ export const Deploy = (props) => {
         window.M.updateTextFields()
     }, [])
 
-/*  
+  
     const onSubmit_deploy = async ({formData}) => {
         let address
         const web3 = new Web3(Web3.givenProvider,  null, { transactionConfirmationBlocks: 1});
@@ -49,7 +49,7 @@ export const Deploy = (props) => {
             history.push('/')
         } catch (e) { }
     }
-*/
+
     let content
     let dep = `{
       "title": "Do you agree use that account for deploying?",
