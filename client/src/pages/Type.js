@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { render } from "react-dom"
-import {Deploy} from './Deploy.js'
+//import {Deploy} from './Deploy.js'
 
 import Form from "@rjsf/material-ui"
 
@@ -143,13 +143,19 @@ class Type extends Component {
     render() {
     let content 
 
-    if (this.state.chosen === 'true') {
-        content = <Deploy   schema = {this.state.schema}
+    /*
+    <Deploy   schema = {this.state.schema}
                             params = {this.state.params}
                             data = {this.state.data}
                             type = {this.state.type}
                             account = {this.props.account}
                             ethBalance = {this.props.ethBalance}  /> 
+    
+    
+    */
+
+    if (this.state.chosen === 'true') {
+        content = <h1>fdlbj</h1>
     } else {
         content = <Form schema={sch} onSubmit={this.onSubmit_sch}/>
     }

@@ -5,7 +5,7 @@ import {TokensPage} from './TokensPage'
 
 
 import detectEthereumProvider from '@metamask/detect-provider'
-//import Type from './Type'
+import Type from './Type'
 
 export const AccountPage = () => {
     const [account, setAccount] = useState(null)
@@ -62,7 +62,7 @@ export const AccountPage = () => {
                     <TokensPage/>
                 </div>
     } else {
-        content = <h1>HI HONEY</h1>
+        content = <Type account={account} ethBalance = {ethBalance}/>
     } 
 
     return (
