@@ -159,12 +159,7 @@ class Type extends Component {
     
 
     if (this.state.chosen === 'true') {
-        content = <Deploy   schema = {this.state.schema}
-                        params = {this.state.params}
-                        data = {this.state.data}
-                        type = {this.state.type}
-                        account = {this.props.account}
-                        ethBalance = {this.props.ethBalance}  /> 
+        content = <h1>kek</h1>
     } else {
         content = <Form schema={sch} onSubmit={this.onSubmit_sch}/>
     }
