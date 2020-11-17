@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { render } from "react-dom"
-//import {Deploy} from './Deploy.js'
+import {Deploy} from './Deploy.js'
 
 import Form from "@rjsf/material-ui"
 
