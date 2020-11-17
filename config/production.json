@@ -1,0 +1,6 @@
+{
+    "port": 5000,
+    "jwtSecret": "SC ZHD",
+    "mongoUri":"mongodb+srv://zhenyazhd:zhenya_db@cluster0.vr1un.mongodb.net/name?retryWrites=true&w=majority",
+    "baseUrl": "http://localhost:5000"
+}

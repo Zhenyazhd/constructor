@@ -1,0 +1,84 @@
+{
+    "title": "Choose type of token",
+    "type": "object",
+    "properties": {
+        "Stage": {
+            "type": "boolean",
+            "title": "Stage",
+            "description": "It allows the owner to divide the crowdfunding process on stages",
+            "default": false
+        },
+        "Timetable": {
+            "type": "boolean",
+            "title": "Timetable",
+            "description": "It allows the owner to create a schedule of stages into which the crowdfunding process will be divided",
+            "default": false
+        },
+        "Escrow":{
+            "type": "boolean",
+            "title": "Escrow",
+            "description": "It implements escrow agreement",
+            "default": false
+        },
+        "TimeEscrow":{
+            "type": "boolean",
+            "title": "Time_Escrow",
+            "description": "It allows the owner to create a schedule of stages into which the crowdfunding process based on escrow contract will be divided",
+            "default": false
+        },
+        "Max":{
+            "type": "boolean",
+            "title": "Max",
+            "description": "It allows the owner to limit the maximum amount of the contribution",
+            "default": false
+        },
+        "Min":{
+            "type": "boolean",
+            "title": "Min",
+            "description": "It allows the owner to limit the minimum amount of the contribution",
+            "default": false
+        }, 
+        "Capped_min":{
+            "type": "boolean",
+            "title": "Min with Cap",
+            "description": "It implements the option of min and allows the owner to set the maximum of needed sum",
+            "default": false
+        },
+        "Capped_max":{
+            "type": "boolean",
+            "title": "Max with Cap",
+            "description": "It implements the option of max and allows the owner to set the maximum of needed sum",
+            "default": false
+        },
+        "Max_Wei":{
+            "type": "boolean",
+            "title": "Cap",
+            "description": "It allows the owner to set the maximum of needed sum",
+            "default": false
+        },
+        "List":{
+            "type": "boolean",
+            "title": "List",
+            "description": "It allows the owner to choose whom he will allow to participate in the crowdfunding process",
+            "default": false
+        },
+        "Changerate":{ 
+            "type": "boolean",
+            "title": "Changerate",
+            "description": "The price of token will grow all process",
+            "default": false
+        },    
+        "Pause":{
+            "type": "boolean",
+            "title": "Pause",
+            "description": "It allows the owner to pause the process",
+            "default": false
+        },
+        "Individual":{
+            "type": "boolean",
+            "title": "Individual",
+            "description": "It allows the owner to set individual conditions for each investor",
+            "default": false
+        }
+    }
+}
