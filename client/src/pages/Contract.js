@@ -35,7 +35,7 @@ export const Contract = () => {
     const [type, setType] = useState(null)
     const [account, setAccount] = useState(null)
     const [ethBalance, setEthBalance] = useState(null)
-
+/*
     const getToken = useCallback(async () => {
         try {
           const fetched = await request(`/api/token/${tokenId}`, 'GET', null, {
@@ -90,7 +90,7 @@ export const Contract = () => {
         console.log(sm_token)
         if (type == 'Stage') {
             Abi = Stage['abi']
-        }
+        }*/
        /* else if(type === 'Timetable') {
             Abi = Timetable['abi']
         }
@@ -121,7 +121,7 @@ export const Contract = () => {
         else if(type === 'Pause') {
             Abi = Pause['abi'] 
         }*/
-        try {
+      /*  try {
         let name
         let uiSchema
         let properties 
@@ -165,7 +165,7 @@ export const Contract = () => {
         let Abi
         if (type == 'Stage') {
             Abi = Stage['abi']
-        }
+        }*/
        /* else if(type == 'Timetable') {
             Abi = Timetable['abi']
         }
@@ -195,7 +195,7 @@ export const Contract = () => {
         }
         else if(type == 'Pause') {
             Abi = Pause['abi'] 
-        }*/
+        }
         let isReached
         let value = '0'
         let params = []
@@ -217,7 +217,7 @@ export const Contract = () => {
             if (element['name'] === method && element['type'] === 'function' && element['stateMutability'] !== 'pure' && element['stateMutability'] !== 'view') {
                 change_state = 'true'
             } 
-        })
+        })*/
      /*   const web3 = new Web3(Web3.givenProvider,  null, { transactionConfirmationBlocks: 1});
         let contract = new web3.eth.Contract(Abi, sm_token['address'])
         if ( change_state === 'false'){
@@ -232,29 +232,29 @@ export const Contract = () => {
             })
         }
         let toastHTML = `<h5 class="black-text text-darken-2">${method}:${isReached}</h5>`*/
-        window.M.toast({html: toastHTML }) 
+      //  window.M.toast({html: toastHTML }) 
     }
     
-    functions()
-    getBlockchain()
+    //functions()
+    //getBlockchain()
 
     let content
 
     if (loading) {
-       content =  <Loader />
+    //   content =  <Loader />
     } else {
-        content = form
+    //    content = form
     }
 
+   // {content}
 
-
-{content}    
+  
 
     return (
         <div> 
             <Navbar account={account}
                    ethBalance = {ethBalance}/>
-            {content}
+           
         </div>
     )
 }
