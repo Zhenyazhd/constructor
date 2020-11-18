@@ -237,14 +237,14 @@ export const Contract = () => {
     
     //functions()
     //getBlockchain()
-
+/*
     let content
 
     if (loading) {
-    //   content =  <Loader />
+       content =  <Loader />
     } else {
-    //    content = form
-    }
+        content = form
+    }*/
 
    // {content}   <Navbar account={account} ethBalance = {ethBalance}/>
 
