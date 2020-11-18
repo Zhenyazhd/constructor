@@ -3,10 +3,11 @@ import {useHttp} from '../hooks/http.hook'
 import {AuthContext} from '../context/AuthContext'
 import {useHistory} from 'react-router-dom'
 import Form from "@rjsf/material-ui"
-import Web3 from 'web3'
+//import Web3 from 'web3'
 
 
 export const Deploy = (props) => {
+  Web3 = require('web3')
   const history = useHistory()  
     const auth = useContext(AuthContext)
     const {request} = useHttp()
