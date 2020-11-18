@@ -27,7 +27,7 @@ import detectEthereumProvider from '@metamask/detect-provider'
 //import 'bootstrap/dist/css/bootstrap.min.css'
 
 export const Contract = () => {
-    const {token} = useContext(AuthContext)
+/*    const {token} = useContext(AuthContext)
     const {request, loading} = useHttp()
 
     const [sm_token, setToken] = useState(null)
@@ -35,7 +35,7 @@ export const Contract = () => {
     const [type, setType] = useState(null)
     const [account, setAccount] = useState(null)
     const [ethBalance, setEthBalance] = useState(null)
-/*
+
     const getToken = useCallback(async () => {
         try {
           const fetched = await request(`/api/token/${tokenId}`, 'GET', null, {
@@ -233,7 +233,7 @@ export const Contract = () => {
         }
         let toastHTML = `<h5 class="black-text text-darken-2">${method}:${isReached}</h5>`*/
       //  window.M.toast({html: toastHTML }) 
-    }
+    //}
     
     //functions()
     //getBlockchain()
@@ -246,14 +246,13 @@ export const Contract = () => {
     //    content = form
     }
 
-   // {content}
+   // {content}   <Navbar account={account} ethBalance = {ethBalance}/>
 
   
 
     return (
         <div> 
-            <Navbar account={account}
-                   ethBalance = {ethBalance}/>
+            
            
         </div>
     )
