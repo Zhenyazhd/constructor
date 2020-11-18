@@ -27,7 +27,7 @@ import detectEthereumProvider from '@metamask/detect-provider'
 //import 'bootstrap/dist/css/bootstrap.min.css'
 
 export const Contract = () => {
-    const {token} = useContext(AuthContext)
+    //const {token} = useContext(AuthContext)
     //const {request, loading} = useHttp()
 
    /// const [sm_token, setToken] = useState(null)
