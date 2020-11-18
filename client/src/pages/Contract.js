@@ -7,10 +7,10 @@ import {Loader} from '../components/Loader'
 import {Navbar} from '../components/Navbar'
 //import Modal from 'react-bootstrap/Modal'
 
-//import Web3 from 'web3'
+import Web3 from 'web3'
 import Form from "@rjsf/material-ui"
 import Stage from '../code_json/Stage.json'
-/*import Timetable from '../code_json/Timetable.json'
+import Timetable from '../code_json/Timetable.json'
 import Escrow from '../code_json/Escrow.json'
 import Timeescrow from '../code_json/Timeescrow.json'
 import Min from '../code_json/Min.json'
@@ -22,7 +22,7 @@ import Capped_max from '../code_json/Capped_max.json'
 import Capped_min from '../code_json/Capped_min.json'
 import Capped_min_max from '../code_json/Capped_min_max.json'
 import Changerate from '../code_json/Changerate.json'
-import d_stage from '../code_json/desciption/d_stage.json'*/
+import d_stage from '../code_json/desciption/d_stage.json'
 import detectEthereumProvider from '@metamask/detect-provider'
 //import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -31,12 +31,12 @@ export const Contract = () => {
     const {request, loading} = useHttp()
 
     const [sm_token, setToken] = useState(null)
-    //const tokenId = useParams().id //here
+    const tokenId = useParams().id
     const [type, setType] = useState(null)
     const [account, setAccount] = useState(null)
     const [ethBalance, setEthBalance] = useState(null)
 
- /*    const getToken = useCallback(async () => {
+    const getToken = useCallback(async () => {
         try {
           const fetched = await request(`/api/token/${tokenId}`, 'GET', null, {
             Authorization: `Bearer ${token}`
@@ -90,8 +90,8 @@ export const Contract = () => {
         console.log(sm_token)
         if (type == 'Stage') {
             Abi = Stage['abi']
-        }*/
-       /* else if(type === 'Timetable') {
+        }
+        else if(type === 'Timetable') {
             Abi = Timetable['abi']
         }
         else if(type === 'Escrow' ) {
@@ -120,8 +120,8 @@ export const Contract = () => {
         }
         else if(type === 'Pause') {
             Abi = Pause['abi'] 
-        }*/
-      /*  try {
+        }
+        try {
         let name
         let uiSchema
         let properties 
@@ -165,8 +165,8 @@ export const Contract = () => {
         let Abi
         if (type == 'Stage') {
             Abi = Stage['abi']
-        }*/
-       /* else if(type == 'Timetable') {
+        }
+        else if(type == 'Timetable') {
             Abi = Timetable['abi']
         }
         else if(type == 'Escrow' ) {
@@ -217,8 +217,8 @@ export const Contract = () => {
             if (element['name'] === method && element['type'] === 'function' && element['stateMutability'] !== 'pure' && element['stateMutability'] !== 'view') {
                 change_state = 'true'
             } 
-        })*/
-     /*   const web3 = new Web3(Web3.givenProvider,  null, { transactionConfirmationBlocks: 1});
+        })
+        const web3 = new Web3(Web3.givenProvider,  null, { transactionConfirmationBlocks: 1});
         let contract = new web3.eth.Contract(Abi, sm_token['address'])
         if ( change_state === 'false'){
             await contract.methods[method](...params).call({from: account}).then(function(result){
@@ -231,29 +231,26 @@ export const Contract = () => {
                 isReached = error.toString(); 
             })
         }
-        let toastHTML = `<h5 class="black-text text-darken-2">${method}:${isReached}</h5>`*/
-      //  window.M.toast({html: toastHTML }) 
-    //}
+        let toastHTML = `<h5 class="black-text text-darken-2">${method}:${isReached}</h5>`
+        window.M.toast({html: toastHTML }) 
+    }
     
-    //functions()
-    //getBlockchain()
-/*
+    functions()
+    getBlockchain()
+
     let content
 
     if (loading) {
        content =  <Loader />
     } else {
         content = form
-    }*/
-
-   // {content}   <Navbar account={account} ethBalance = {ethBalance}/>
-
-  
+    }
 
     return (
         <div> 
-            
-           
+            <Navbar account={account}
+                   ethBalance = {ethBalance}/>
+            {content}            
         </div>
     )
 }

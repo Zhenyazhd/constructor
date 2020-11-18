@@ -67,7 +67,14 @@ export const AuthPage1 = (props) => {
       }
     }
   }`
-    
+
+  /*    "start": "cross-env NODE_ENV=production node --max-old-space-size=8192 app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start  --prefix client",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\"" */
+  //  
   return (
     <div> 
       <div>

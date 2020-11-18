@@ -6,7 +6,7 @@ import Form from "@rjsf/material-ui"
 
 import sch from '../code_json/Schema.json'
 import Stage from '../code_json/Stage.json'
-/*import Timetable from '../code_json/Timetable.json'
+import Timetable from '../code_json/Timetable.json'
 import Escrow from '../code_json/Escrow.json'
 import Timeescrow from '../code_json/Timeescrow.json'
 import Min from '../code_json/Min.json'
@@ -17,7 +17,7 @@ import List from '../code_json/List.json'
 import Capped_max from '../code_json/Capped_max.json'
 import Capped_min from '../code_json/Capped_min.json'
 import Capped_min_max from '../code_json/Capped_min_max.json'
-import Changerate from '../code_json/Changerate.json'*/
+import Changerate from '../code_json/Changerate.json'
 
 class Type extends Component {
     
@@ -39,7 +39,7 @@ class Type extends Component {
             this.setState({type: 'Stage'})
             Abi = Stage['abi']
         }
-       /* else if(formData['Timetable'] ) {
+        else if(formData['Timetable'] ) {
             this.setState({data: Timetable})
             this.setState({type: 'Timetable'})
             Abi = Timetable['abi']
@@ -108,15 +108,11 @@ class Type extends Component {
             this.setState({data: Pause})
             this.setState({type: 'Pause'})
             Abi = Pause['abi']
-        }*/
+        }
         this.deploy(Abi)
         this.setState({chosen: 'true'})     
     }
-
-
-
     //for deploy
-    
     async deploy(Abi) {
         let name
         let v = []
@@ -147,19 +143,13 @@ class Type extends Component {
     render() {
     let content 
 
-    /*
-    <Deploy   schema = {this.state.schema}
+    if (this.state.chosen === 'true') {
+        content = <Deploy   schema = {this.state.schema}
                             params = {this.state.params}
                             data = {this.state.data}
                             type = {this.state.type}
                             account = {this.props.account}
                             ethBalance = {this.props.ethBalance}  /> 
-    
-    */
-    
-
-    if (this.state.chosen === 'true') {
-        content = <h1>kek</h1>
     } else {
         content = <Form schema={sch} onSubmit={this.onSubmit_sch}/>
     }

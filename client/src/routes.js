@@ -6,16 +6,16 @@ import {Contract} from './pages/Contract'
 
 export const useRoutes = isAuthenticated => {
 
-  if (isAuthenticated) {
+  if (isAuthenticated) {//exact for access<Redirect to="/use" /> 
     return (
       <Switch>
         <Route path="/account" exact> 
           <AccountPage />
-        </Route> 
+        </Route>  
         <Route path="/contract/:id">
           <Contract />
         </Route>
-        <Redirect to="/account" exact/>
+      <Redirect to="/account" />
       </Switch>
     )
   } 

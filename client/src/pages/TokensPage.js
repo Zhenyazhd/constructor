@@ -58,7 +58,7 @@ export const TokensPage = () => {
     } catch (e) {}
   })
 
- 
+  /*<div class="row"></div>*/
   let content
   
   if (loading) {

@@ -6,8 +6,9 @@ import Form from "@rjsf/material-ui"
 import Web3 from 'web3'
 
 
+
 export const Deploy = (props) => {
-  const history = useHistory()  
+    const history = useHistory()  
     const auth = useContext(AuthContext)
     const {request} = useHttp()
 
@@ -19,7 +20,7 @@ export const Deploy = (props) => {
         window.M.updateTextFields()
     }, [])
 
-  /*
+
     const onSubmit_deploy = async ({formData}) => {
         let address
         const web3 = new Web3(Web3.givenProvider,  null, { transactionConfirmationBlocks: 1});
@@ -70,12 +71,12 @@ export const Deploy = (props) => {
     dep = JSON.parse(dep)
 
     if (deployed === false) {
-    //  content = <Form schema={props.schema} onSubmit={onSubmit_deploy}/>
-    }*/
-  
+      content = <Form schema={props.schema} onSubmit={onSubmit_deploy}/>
+    }
+    
     return (
       <div> 
-        <h1>vcb n</h1>
+        {content}
       </div>
     )
 }

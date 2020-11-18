@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useState, useCallback } from 'react'
 import { Button } from 'semantic-ui-react' 
 import {Navbar} from '../components/Navbar'
 import {TokensPage} from './TokensPage'
-//import Web3 from 'web3'
+
 
 import detectEthereumProvider from '@metamask/detect-provider'
 import Type from './Type'
@@ -51,7 +51,7 @@ export const AccountPage = () => {
     useEffect(() => {
         getBlockchain()
       }, [getBlockchain])
-    //getBlockchain()    <Type account={account} ethBalance = {ethBalance}/>
+    //getBlockchain()
     
     let content 
     if( !cr_token ){
@@ -62,7 +62,8 @@ export const AccountPage = () => {
                     <TokensPage/>
                 </div>
     } else {
-        content = <Type account={account} ethBalance = {ethBalance}/>
+        content = <Type account={account}
+        ethBalance = {ethBalance}/>
     } 
 
     return (
