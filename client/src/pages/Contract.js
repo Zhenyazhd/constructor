@@ -27,7 +27,7 @@ import detectEthereumProvider from '@metamask/detect-provider'
 //import 'bootstrap/dist/css/bootstrap.min.css'
 
 export const Contract = () => {
-/*    const {token} = useContext(AuthContext)
+    const {token} = useContext(AuthContext)
     const {request, loading} = useHttp()
 
     const [sm_token, setToken] = useState(null)
@@ -35,7 +35,7 @@ export const Contract = () => {
     const [type, setType] = useState(null)
     const [account, setAccount] = useState(null)
     const [ethBalance, setEthBalance] = useState(null)
-
+/* 
     const getToken = useCallback(async () => {
         try {
           const fetched = await request(`/api/token/${tokenId}`, 'GET', null, {
