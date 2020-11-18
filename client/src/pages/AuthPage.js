@@ -13,16 +13,17 @@ export const AuthPage = () => {
     let but = element.nativeEvent.submitter.className.split(" ")[0]
     let key = await Object.keys(e.formData)
     let password = e.formData[key[1]]
-    let address = e.formData[key[0]] 
+    let email = e.formData[key[0]] 
     if(but == 'reg') {
       try {
-        console.log('here', password)
-        const data = await request('/api/auth/register', 'POST', {address, password})
+        const data = await request('/api/auth/register', 'POST', {email, password})
         message(data.message)
+        const data1 = await request('/api/auth/login', 'POST', {email, password})
+        auth.login(data1.token, data1.userId)
       } catch (e) {}
     } else {
       try {
-        const data = await request('/api/auth/login', 'POST', {address, password})
+        const data = await request('/api/auth/login', 'POST', {email, password})
         auth.login(data.token, data.userId)
       } catch (e) {}
     } 
@@ -41,9 +42,9 @@ export const AuthPage = () => {
     "title": "Create or Log in account",
     "type": "object",
     "properties": {
-      "address": {
+      "email": {
         "type": "string",
-        "title": "address"
+        "title": "email"
       },
      "password": {
         "type": "string",

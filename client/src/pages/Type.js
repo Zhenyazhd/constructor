@@ -110,8 +110,10 @@ class Type extends Component {
             Abi = Pause['abi']
         }
         this.deploy(Abi)
-        this.setState({chosen: 'true'})     
+        this.setState({chosen: 'true'}) 
     }
+
+    
     //for deploy
     async deploy(Abi) {
         let name

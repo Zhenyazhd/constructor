@@ -57,13 +57,13 @@ export const Contract = () => {
         const provider = await detectEthereumProvider();
         
         if (typeof window.ethereum !== 'undefined') {
-            console.log('MetaMask is installed!');
+           // console.log('MetaMask is installed!');
         }
 
         if (provider) {
             await provider.request({method:'eth_requestAccounts'})
         } else {
-            console.log('Please install MetaMask!');
+          //  console.log('Please install MetaMask!');
         }
 
         const { ethereum } = window
@@ -87,7 +87,7 @@ export const Contract = () => {
     
     const functions = async() => {
         let Abi
-        console.log(sm_token)
+       // console.log(sm_token)
         if (type == 'Stage') {
             Abi = Stage['abi']
         }
@@ -131,7 +131,7 @@ export const Contract = () => {
         let temp_prop = []
         //const web3 = new Web3(Web3.givenProvider,  null, { transactionConfirmationBlocks: 1});
         //let contract = new web3.eth.Contract(Stage['abi'], this.state.account)
-        console.log(type, Abi)
+       // console.log(type, Abi)
         Abi.forEach((element) => {
             if (element['type'] === 'function') {
                 if (JSON.stringify(element['inputs']) !== '[]') {
@@ -257,17 +257,4 @@ export const Contract = () => {
 
 
 
-/* 
 
-
-<Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                    <Modal.Title>{res_name}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>{res}</Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                </Modal.Footer>
-            </Modal>*/

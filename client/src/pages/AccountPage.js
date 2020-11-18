@@ -21,19 +21,19 @@ export const AccountPage = () => {
         const provider = await detectEthereumProvider();
         
         if (typeof window.ethereum !== 'undefined') {
-            console.log('MetaMask is installed!');
+           // console.log('MetaMask is installed!');
         }
 
         if (provider) {
             await provider.request({method:'eth_requestAccounts'})
         } else {
-            console.log('Please install MetaMask!');
+           // console.log('Please install MetaMask!');
         }
 
         const { ethereum } = window
         
         const accounts = await ethereum.request({ method: 'eth_accounts' });
-        console.log(accounts)
+      //  console.log(accounts)
         setAccount(accounts[0])
         
         let params = [
@@ -50,8 +50,8 @@ export const AccountPage = () => {
 
     useEffect(() => {
         getBlockchain()
-      }, [getBlockchain])
-    //getBlockchain()
+    }, [getBlockchain])
+
     
     let content 
     if( !cr_token ){
