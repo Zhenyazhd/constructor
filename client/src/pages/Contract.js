@@ -31,7 +31,7 @@ export const Contract = () => {
     const {request, loading} = useHttp()
 
     const [sm_token, setToken] = useState(null)
-   // const tokenId = useParams().id
+    const tokenId = useParams().id //here
     const [type, setType] = useState(null)
     const [account, setAccount] = useState(null)
     const [ethBalance, setEthBalance] = useState(null)
